@@ -53,114 +53,119 @@ def player_is_dead(wrong_guesses):
     pass
 
 
-def display_platform(wrong_guesses):
- zero_incorrect = ("""
-  _________
-  |        |
-           |
-           |
-           |
-           |
-           |
-           |
-  _________|_______
-""")
+	def display_platform(wrong_guesses):
+  	"""Displays (prints) hanging platform based on how many incorrect guesses.
+  
+  	Args:
+      	  wrong_guesses (str): A string containing all wrong guesses.
+   	 """
+	 zero_incorrect = """
+	  _________
+	  |        |
+		   |
+		   |
+		   |
+		   |
+		   |
+		   |
+	  _________|_______
+	"""
 
 
 
-one_incorrect = ("""
-  _________
-  |        |
-  O        |
-           |
-           |
-           |
-           |
-           |
-  _________|_______
-""")
+	one_incorrect = """
+	  _________
+	  |        |
+	  O        |
+		   |
+		   |
+		   |
+		   |
+		   |
+	  _________|_______
+	"""
 
-two_incorrect = ("""
-  _________
-  |        |
-  O        |
-  |        |
-  |        |
-           |
-           |
-           |
-  _________|_______")
-	""")
+	two_incorrect = """
+	  _________
+	  |        |
+	  O        |
+	  |        |
+	  |        |
+		   |
+		   |
+		   |
+	  _________|_______
+		"""
 
-three_incorrect = ("""
-  _________
-  |        |
-  O        |
---|        |
-  |        |
-           |
-           |
-           |
-  _________|_______
-	""")
+	three_incorrect = """
+	  _________
+	  |        |
+	  O        |
+	--|        |
+	  |        |
+		   |
+		   |
+		   |
+	  _________|_______
+		"""
 
-four_incorrect = ("""
-  _________
-  |        |
-  O        |
---|--      |
-  |        |
-           |
-           |
-           |
-  _________|_______
-	""")
+	four_incorrect = """
+	  _________
+	  |        |
+	  O        |
+	--|--      |
+	  |        |
+		   |
+		   |
+		   |
+	  _________|_______
+		"""
 
-five_incorrect = ("""
-  _________
-  |        |
-  O        |
---|--      |
-  |        |
- /         |
-           |
-           |
-  _________|_______
-""")
+	five_incorrect = """
+	  _________
+	  |        |
+	  O        |
+	--|--      |
+	  |        |
+	 /         |
+		   |
+		   |
+	  _________|_______
+	"""
 
-six_incorrect = ("""
-  _________
-  |        |
-  O        |
---|--      |
-  |        |
- / \       |
-           |
-           |
-  _________|_______
-""")
+	six_incorrect = """
+	  _________
+	  |        |
+	  O        |
+	--|--      |
+	  |        |
+	 / \       |
+		   |
+		   |
+	  _________|_______
+	"""
 
 
-if num_wrong_attempts == 0:
-	print(zero_incorrect)
+	if num_wrong_attempts == 0:
+		print(zero_incorrect)
 
-if num_wrong_attempts == 1:
-	print(one_incorrect) 
+	if num_wrong_attempts == 1:
+		print(one_incorrect) 
 
-if num_wrong_attempts == 2: 
-	print(two_incorrect) 
+	if num_wrong_attempts == 2: 
+		print(two_incorrect) 
 
-if num_wrong_attempts == 3:  
-	print(three_incorrect)
+	if num_wrong_attempts == 3:  
+		print(three_incorrect)
 
-if num_wrong_attempts == 4: 
-	print(four_incorrect)
+	if num_wrong_attempts == 4: 
+		print(four_incorrect)
 
-if num_wrong_attempts == 5:  
-	print(five_incorrect) 
+	if num_wrong_attempts == 5:  
+		print(five_incorrect) 
 
-if num_wrong_attempts == 6:  
-	print(six_incorrect)
+	if num_wrong_attempts == 6:  
+		print(six_incorrect)
 
 
 
